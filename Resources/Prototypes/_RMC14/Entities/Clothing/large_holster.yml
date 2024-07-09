@@ -65,3 +65,29 @@
           - RMCWeaponShotgun
         insertSound: /Audio/_RMC14/Clothing/Holsters/gun_rifle_draw.ogg
         ejectSound: /Audio/_RMC14/Clothing/Holsters/gun_rifle_draw.ogg
+
+- type: entity
+  parent: RMCBaseHolsterLarge
+  id: RMCHolsterMachete
+  name: H5 pattern M2132 machete scabbard
+  description: A large leather scabbard used to carry a M2132 machete. It can be strapped to the back or the armor.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Holsters/machete.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Holsters/machete.rsi
+    slots:
+    - back
+    - belt
+    - suitstorage
+  - type: ItemSlots
+    slots:
+      holster:
+        name: Machete
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        whitelist:
+          tags:
+          - Machete
+        insertSound: /Audio/_RMC14/Clothing/Holsters/gun_rifle_draw.ogg
+        ejectSound: /Audio/_RMC14/Clothing/Holsters/gun_rifle_draw.ogg

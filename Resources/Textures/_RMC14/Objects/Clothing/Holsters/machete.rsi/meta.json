@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cmss13 at https://github.com/cmss13-devs/cmss13/blob/34293227af198af44c732305f570a8e847470c5d/icons/obj/items/storage.dmi, https://github.com/cmss13-devs/cmss13/blob/34293227af198af44c732305f570a8e847470c5d/icons/mob/humans/onmob/items_righthand_0.dmi, https://github.com/cmss13-devs/cmss13/blob/34293227af198af44c732305f570a8e847470c5d/icons/mob/humans/onmob/items_lefthand_0.dmi, https://github.com/cmss13-devs/cmss13/blob/34293227af198af44c732305f570a8e847470c5d/icons/mob/humans/onmob/suit_slot.dmi, https://github.com/cmss13-devs/cmss13/blob/34293227af198af44c732305f570a8e847470c5d/icons/mob/humans/onmob/back.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "holster-full"
+    },
+    {
+      "name": "holster"
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "holster-full-equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    },
+    {
+      "name": "holster-full-equipped-BELT",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "holster-full-equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "holster-full-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "holster-full-inhand-left",
+      "directions": 4
+    }
+  ]
+}
