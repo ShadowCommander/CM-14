@@ -1,0 +1,67 @@
+﻿- type: entity
+  abstract: true
+  parent: Clothing
+  id: RMCBaseHolsterLarge
+  name: abstract large holster
+  description: The physical manifestation of a large holster. Wow.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Holsters/shotgun.rsi
+    layers:
+    - state: holster
+      map: [ "holster" ]
+    - state: holster-full
+      map: [ "holster-full" ]
+  - type: Appearance
+  - type: RMCHolsterVisuals
+    containerId: holster
+    filledLayerPrefix: holster-full
+  - type: GenericVisualizer
+    visuals:
+      enum.HolsterVisuals.Full:
+        holster-full:
+          True: {visible: true}
+          False: {visible: false}
+        holster:
+          True: {visible: false}
+          False: {visible: true}
+  - type: Item
+    size: Large
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: ContainerContainer
+    containers:
+      holster: !type:ContainerSlot
+  - type: CMHolster
+  - type: CMItemSlots
+  - type: Clothing
+    sprite: Clothing/Belt/sheath.rsi
+    quickEquip: false
+    slots:
+    - back
+    - suitstorage
+  - type: ItemSlots
+
+- type: entity
+  parent: RMCBaseHolsterLarge
+  id: RMCHolsterShotgun
+  name: L44 M42A2 scabbard
+  description: A large leather holster fitted for UNMC-issue shotguns. It has harnesses that allow it to be secured to
+    the back or belt for easy storage.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Holsters/shotgun.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Holsters/shotgun.rsi
+  - type: ItemSlots
+    slots:
+      holster:
+        name: Shotgun
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        whitelist:
+          tags:
+          - RMCWeaponShotgun
+        insertSound: /Audio/_RMC14/Clothing/Holsters/gun_rifle_draw.ogg
+        ejectSound: /Audio/_RMC14/Clothing/Holsters/gun_rifle_draw.ogg
