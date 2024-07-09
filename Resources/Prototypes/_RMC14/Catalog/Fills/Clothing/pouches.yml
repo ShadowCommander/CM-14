@@ -257,5 +257,5 @@
   components:
   - type: ContainerFill
     containers:
-      item:
+      holster:
       - CMM2132Machete

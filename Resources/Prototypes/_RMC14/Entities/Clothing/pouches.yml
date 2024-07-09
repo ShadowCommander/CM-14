@@ -801,36 +801,24 @@
 #whitelist: # TODO RMC14 add cassettes
 
 - type: entity
-  parent: [ Clothing, ClothingSlotBase ]
+  parent: [CMPouch, RMCBaseHolsterLarge]
   id: CMPouchMachete
   name: H6B pattern M2132 machete pouch
   description: A large leather pouch used to carry a M2132 machete. It can be strapped to the pouch slot.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Pouches/machete.rsi
-    state: sheath
-  - type: Clothing
-    quickEquip: false
-    slots:
-    - pocket
+    layers:
+    - state: sheath
+      map: [ "holster" ]
+    - state: sheath-machete
+      map: [ "holster-full" ]
   - type: ItemSlots
     slots:
-      item:
+      holster:
         name: Machete
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
         whitelist:
           tags:
           - Machete
-  - type: ItemMapper
-    mapLayers:
-      sheath-machete:
-        whitelist:
-          tags:
-          - Machete
-  - type: Appearance
-  - type: Tag
-    tags:
-    - Pouch
-  - type: CMHolster
-  - type: CMItemSlots
