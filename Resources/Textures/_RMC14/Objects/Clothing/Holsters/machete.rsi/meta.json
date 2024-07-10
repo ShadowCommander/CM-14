@@ -8,10 +8,10 @@
   },
   "states": [
     {
-      "name": "holster-full"
+      "name": "holster"
     },
     {
-      "name": "holster"
+      "name": "holster-full"
     },
     {
       "name": "equipped-BACKPACK",
