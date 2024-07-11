@@ -20,6 +20,14 @@
     {
       "name": "holster-full-equipped-BACKPACK",
       "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "holster-full-equipped-SUITSTORAGE",
+      "directions": 4
     }
   ]
 }
