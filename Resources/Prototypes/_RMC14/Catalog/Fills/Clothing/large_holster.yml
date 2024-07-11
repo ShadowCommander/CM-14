@@ -1,0 +1,19 @@
+﻿- type: entity
+  parent: RMCHolsterShotgun
+  id: RMCHolsterShotgunFilled
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      holster:
+      - WeaponShotgunM42A2
+
+- type: entity
+  parent: RMCHolsterMachete
+  id: RMCHolsterMacheteFilled
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      holster:
+      - CMM2132Machete
